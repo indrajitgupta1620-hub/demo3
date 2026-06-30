@@ -26,7 +26,7 @@ pipeline{
           }
         }
         stage{
-           steps(Package){
+           steps('Package'){
                bat 'mvn package -DskipTests'
            }
            post{
